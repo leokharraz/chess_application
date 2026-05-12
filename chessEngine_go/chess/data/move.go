@@ -35,7 +35,9 @@ func NewChessMoveByIndex(initial int, target int) *ChessMove {
 		Initial: initial, Target: target}
 	return &cm
 }
-
+func test() string {
+	print("string")
+}
 func (cm ChessMove) String() string {
 	var output = "Chess Move: " + cm.InitialCoord + " to " +
 		cm.TargetCoord + " > indices: " + strconv.Itoa(cm.Initial) + "|" + strconv.Itoa(cm.Target)
